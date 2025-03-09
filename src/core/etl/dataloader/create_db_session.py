@@ -13,6 +13,10 @@ def create_db_session() -> sessionmaker:
     try:
         engine = create_engine(
             database_url,
+            pool_pre_ping=True,  # This will test connections before using them
+            pool_recycle=3600,   # Recycle connections after an hour
+            pool_size=10,        # Adjust based on your needs
+            max_overflow=20,      # Allow temporary additional connections
             connect_args={
                 "connect_timeout": 5,
             },

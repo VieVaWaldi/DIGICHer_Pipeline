@@ -85,7 +85,7 @@ def log_run_time(start_time: datetime):
 
 if __name__ == "__main__":
     source = "openaire"
-    run = 0
+    run = 1
 
     load_dotenv()
     config = get_config()

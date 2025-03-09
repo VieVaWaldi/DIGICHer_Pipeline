@@ -6,11 +6,8 @@
 #SBATCH --output=/home/lu72hip/DIGICHer/DIGICHer_Pipeline/data/runs/enrichment/etl_enrichment_geolocation_%j.log
 
 pg_ctl -D $PGDATA stop
-
-sleep 5
-
+sleep 8
 pg_ctl -D $PGDATA start
-
 
 cd /home/lu72hip/DIGICHer/DIGICHer_Pipeline
 source venv/bin/activate

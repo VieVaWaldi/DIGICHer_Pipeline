@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=dataloader
 #SBATCH --partition=standard
-#SBATCH --time=4:00:00
+#SBATCH --time=12:00:00
 #SBATCH --output=/home/lu72hip/DIGICHer/DIGICHer_Pipeline/data/runs/dataloader/dataloader_%j.log
 
 ### CleanUp
